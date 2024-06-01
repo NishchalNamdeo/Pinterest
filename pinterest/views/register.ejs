@@ -1,0 +1,33 @@
+<% include ./partials/header.ejs %>
+<div class="w-full h-screen bg-zinc-200 flex items-center justify-center">
+<div class="w-[30vw] h-[98vh] bg-white px-20 py-5 rounded-[2vw]">
+  <div class="flex items-center justify-center mt-2">
+  <img class="w-[3vw]" src="https://s.pinimg.com/webapp/favicon_48x48-7470a30d.png" alt="">
+    
+  </div>
+  <h1 class="text-3xl text-center traking-tighter leading-none mt-1 mb-2">Create new Account</h1>
+  <form action="/register" method="post">
+    <h4 class="mt-2 opacity-[.7]">Username</h4>
+    <input class="block border-2 h-[3.3vw]  outline-blue-300 w-full px-3 py-2  mt-1 rounded-[1vw] " type="text" name="username" placeholder="username">
+    <h4 class="mt-2 opacity-[.7]">Name</h4>
+
+    <input class="block border-2 h-[3.3vw]  outline-blue-300 w-full px-3 py-2  mt-1 rounded-[1vw] " type="text" name="name" placeholder="name">
+    <h4 class="mt-2 opacity-[.7]">Email</h4>
+
+    <input class="block border-2 h-[3.3vw]  outline-blue-300 w-full px-3 py-2  mt-1 rounded-[1vw] " type="email" name="email" placeholder="email">
+    <h4 class="mt-2 opacity-[.7]">Contact</h4>
+
+    <input class="block border-2 h-[3.3vw]  outline-blue-300 w-full px-3 py-2  mt-1 rounded-[1vw] " type="number" name="contact" placeholder="contact">
+    <h3 class="mt-2 opacity-[.7]">Password</h3>
+    <input class="block border-2 h-[3.3vw]  outline-blue-300 w-full px-3 py-2 mt-1 rounded-[1vw]" type="password" name="password" placeholder="password">
+    <input class="block border-2  h-[3.3vw] outline-blue-300 w-full px-3 py-2 mt-4  bg-[#B60000] rounded-full text-white" value="Create New Account" type="submit">
+    <p class="traking-tighter text-xs font-semibold text-zinc-700 mt-4 text-center ">By continuing, you agree to Pinterest's Terms of Service; and acknowledge you've read our Privacy Policy;  Notice at collection; 
+    </p>
+  </form>
+  <a class="inline-block font-semibold mt-2 text-sm w-full text-zinc-700 text-center" href="/">Log in Existing Account</a>
+</div>
+</div>
+
+
+
+<% include ./partials/footer.ejs %>
